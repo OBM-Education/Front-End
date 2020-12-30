@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/sc9j5tskecbw/public_html/dev.obmeg.com/
+    - /bin/cp -R * $DEPLOYPATH
