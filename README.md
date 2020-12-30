@@ -1,3 +1,3 @@
 # OBM Education Front End 
 
-[www.obmeg.comp](https://www.obmeg.com/) 
+[www.obmeg.com](https://www.obmeg.com/) 
