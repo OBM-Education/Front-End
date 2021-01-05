@@ -1,3 +1,5 @@
+@import "stylesheet.css";
+
 * {
     margin: 0px;
     padding: 0px;
@@ -6,6 +8,30 @@
     font-size: 100%;
     line-height: inherit;
 }
+
+
+html {
+    --scrollbarBG: #000000;
+    --thumbBG: #00aaff;
+  }
+  body::-webkit-scrollbar {
+    width: 11px;
+  }
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+
+  
+
 
 
 /***
@@ -17,7 +43,7 @@
  ***/
 
 :root {
-    --thm-font: "Teko", sans-serif;
+    --thm-font: "GT Walsheim Pro";
     --thm-base: #1d8ff7;
     --thm-base-rgb: 255, 170, 23;
     --thm-black: #102435;
@@ -82,7 +108,7 @@ h4,
 h5,
 h6 {
     position: relative;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0px 0px 20px;
     background: none;
     line-height: 1.25em;
@@ -99,7 +125,7 @@ h2 {
 }
 
 h3 {
-    font-size: 60px;
+    font-size: 44px;
 }
 
 h4 {
@@ -107,7 +133,7 @@ h4 {
 }
 
 h5 {
-    font-size: 30px;
+    font-size: 18px;
 }
 
 h6 {
@@ -138,6 +164,8 @@ p {
 .text {
     line-height: 1.8em;
     margin: 0 0;
+    text-align: justify;
+    font-size: 15px;
 }
 
 ::-webkit-input-placeholder {
@@ -248,12 +276,14 @@ figure {
     -o-transition: all 0.3s ease;
 }
 
+
+
 .btn-style-one .btn-title {
     position: relative;
     display: block;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 30px;
-    font-weight: 400;
+    font-weight: 600;
     padding: 19px 50px 16px;
     z-index: 1;
 }
@@ -270,7 +300,7 @@ figure {
     width: 26px;
     height: 100%;
     background: var(--thm-black);
-    opacity: 0.2;
+    opacity: 0;
     z-index: 0;
     transform: skewX(-22deg);
     transition: all 0.5s ease;
@@ -308,9 +338,9 @@ figure {
 .btn-style-four .btn-title {
     position: relative;
     display: block;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 30px;
-    font-weight: 400;
+    font-weight: 600;
     padding: 7px 12px;
     z-index: 1;
 }
@@ -327,7 +357,7 @@ figure {
     width: 26px;
     height: 100%;
     background: var(--thm-black);
-    opacity: 0.2;
+    opacity: 0;
     z-index: 0;
     transform: skewX(-22deg);
     transition: all 0.5s ease;
@@ -367,9 +397,9 @@ figure {
 .btn-style-two .btn-title {
     position: relative;
     display: block;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 30px;
-    font-weight: 400;
+    font-weight: 600;
     padding: 19px 50px 16px;
     z-index: 1;
     transition: 0.5s;
@@ -386,7 +416,7 @@ figure {
     width: 26px;
     height: 100%;
     background: #ffffff;
-    opacity: 0.2;
+    opacity: 0;
     z-index: 0;
     transform: skewX(-22deg);
     transition: all 0.5s ease;
@@ -424,9 +454,9 @@ figure {
 .btn-style-five .btn-title {
     position: relative;
     display: block;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 30px;
-    font-weight: 400;
+    font-weight: 600;
     padding: 7px 12px;
     z-index: 1;
     transition: 0.5s;
@@ -443,7 +473,7 @@ figure {
     width: 26px;
     height: 100%;
     background: #ffffff;
-    opacity: 0.2;
+    opacity: 0;
     z-index: 0;
     transform: skewX(-22deg);
     transition: all 0.5s ease;
@@ -789,9 +819,9 @@ img {
     position: relative;
     display: block;
     text-align: center;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 30px;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: #ffffff;
@@ -906,9 +936,9 @@ img {
     position: relative;
     display: block;
     padding: 5px 0px;
-    line-height: 24px;
+    line-height: 20px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 14px;
     color: #171b27;
     letter-spacing: 0.03em;
     text-align: left;
@@ -1356,8 +1386,8 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 120vw;
+    height: 112vh;
     z-index: 99999;
     transform: scale(1, 0);
     transform-origin: bottom center;
@@ -2179,7 +2209,7 @@ img.lazy-image.loaded {
     font-size: 24px;
     line-height: 1.5em;
     color: #ffffff;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 20px;
@@ -2828,11 +2858,11 @@ img.lazy-image.loaded {
 .sec-title h2 {
     position: relative;
     display: block;
-    font-size: 70px;
+    font-size: 50px;
     line-height: 0.9em;
     text-transform: uppercase;
     color: var(--thm-black);
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 0px;
 }
 
@@ -2848,12 +2878,13 @@ img.lazy-image.loaded {
 .sec-title .lower-text {
     position: relative;
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.7em;
     font-weight: 300;
     letter-spacing: 0.1em;
     color: var(--thm-text);
     padding: 30px 0px 0px;
+    text-align: justify;
 }
 
 
@@ -3165,17 +3196,17 @@ img.lazy-image.loaded {
 }
 
 .about-section .text-column .sec-title .lower-text {
-    text-transform: uppercase;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 300;
     letter-spacing: 0;
     color: #1d8ff7;
+    text-align: justify;
 }
 
 .about-section .text-column .text {
     position: relative;
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 500;
     line-height: 1.7em;
     letter-spacing: 0.02em;
 }
@@ -3456,9 +3487,8 @@ img.lazy-image.loaded {
     vertical-align: top;
     color: var(--thm-black);
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 1px;
-    text-transform: uppercase;
     transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
@@ -3587,9 +3617,9 @@ img.lazy-image.loaded {
     position: relative;
     top: -5px;
     display: block;
-    line-height: 1.7em;
-    letter-spacing: 0.1em;
     margin-bottom: 32px;
+    text-align: justify;
+    font-size: 18px;
 }
 
 .we-do-section .left-col {
@@ -3707,8 +3737,8 @@ img.lazy-image.loaded {
     position: relative;
     font-size: 20px;
     line-height: 32px;
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
@@ -3730,7 +3760,7 @@ img.lazy-image.loaded {
     height: 30px;
     font-size: 15px;
     font-weight: 600;
-    color: var(--thm-base);
+    color: #1d8ff7;
     line-height: 30px;
     content: "\f116";
     font-family: "Flaticon";
@@ -4166,7 +4196,7 @@ img.lazy-image.loaded {
 
 .fact-counter .column .inner .count-outer {
     position: relative;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 80px;
     line-height: 1em;
     letter-spacing: 0px;
@@ -4228,8 +4258,8 @@ img.lazy-image.loaded {
     padding: 75px 50px 20px;
     min-height: 240px;
     background: var(--thm-base);
-    font-weight: 400;
-    font-size: 40px;
+    font-weight: 550;
+    font-size: 25px;
     line-height: 1.2em;
     text-transform: uppercase;
     letter-spacing: 0px;
@@ -4284,16 +4314,17 @@ img.lazy-image.loaded {
 }
 
 .trusted-section .feature h5 {
-    font-weight: 400;
+    font-weight: 600;
     margin: 0;
     line-height: 1.15em;
     color: var(--thm-black);
     margin-bottom: 10px;
+    
 }
 
 .trusted-section .feature .sub-text {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 0.1em;
     color: var(--thm-text);
     text-transform: uppercase;
@@ -4820,8 +4851,8 @@ img.lazy-image.loaded {
 .default-tabs .tab-buttons .tab-btn {
     position: relative;
     line-height: 30px;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 11px;
+    font-weight: 600;
     color: var(--thm-black);
     text-align: center;
     padding: 14px 40px 11px;
@@ -4885,7 +4916,7 @@ img.lazy-image.loaded {
 
 .default-tabs .tabs-content .text {
     position: relative;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     color: var(--thm-text);
     line-height: 1.7em;
@@ -4915,7 +4946,7 @@ img.lazy-image.loaded {
     left: 0;
     top: 0;
     width: 242px;
-    border-radius: 50%;
+    border-radius: 25%;
 }
 
 .agency-section .featured-block-two .image img {
@@ -4924,7 +4955,7 @@ img.lazy-image.loaded {
     -webkit-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
-    border-radius: 50%;
+    border-radius: 25%;
 }
 
 .agency-section .featured-block-two .text {
@@ -5061,7 +5092,7 @@ img.lazy-image.loaded {
 
 .news-block .lower-box h5 {
     text-transform: uppercase;
-    font-size: 34px;
+    font-size: 20px;
     color: var(--thm-black);
     margin-bottom: 35px;
 }
@@ -5514,11 +5545,11 @@ img.lazy-image.loaded {
     position: relative;
     float: left;
     display: block;
-    font-size: 60px;
+    font-size: 40px;
     line-height: 0.85em;
     text-transform: uppercase;
     color: var(--thm-black);
-    font-weight: 500;
+    font-weight: 600;
     margin: 0px 0px 25px;
     z-index: 3;
 }
@@ -5571,8 +5602,8 @@ img.lazy-image.loaded {
 
 .main-footer h6 {
     position: relative;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 0.03em;
@@ -5613,7 +5644,7 @@ img.lazy-image.loaded {
 .main-footer .links-widget ul li a {
     position: relative;
     color: #999b9f;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 30px;
     text-transform: capitalize;
     letter-spacing: 0.07em;
@@ -5622,6 +5653,10 @@ img.lazy-image.loaded {
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
+}
+
+.contact-info{
+    font-size: 14px;
 }
 
 .main-footer .links-widget ul li a:before {
@@ -5731,7 +5766,7 @@ img.lazy-image.loaded {
     display: block;
     font-weight: 300;
     line-height: 1.5em;
-    font-size: 18px;
+    font-size: 15px;
     letter-spacing: 0.1em;
     margin: 25px 0 0;
 }
@@ -10749,7 +10784,8 @@ img.lazy-image.loaded {
 .live-section__dark .sec-title h2,
 .agency-section__dark .sec-title h2,
 .team-section__dark .sec-title h2,
-.about-section__dark .sec-title h2 {
+.about-section__dark .sec-title h2,
+.project-single__dark h5 {
     color: #ffffff;
 }
 
@@ -11275,7 +11311,7 @@ img.lazy-image.loaded {
 
 .login-wrapper form p {
     margin: 0;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
     color: #686a6f;
     letter-spacing: 0.1em;
@@ -11313,7 +11349,7 @@ img.lazy-image.loaded {
     color: #000000;
     font-weight: 400;
     letter-spacing: 0.1em;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     line-height: 1;
     margin-top: 35px;
